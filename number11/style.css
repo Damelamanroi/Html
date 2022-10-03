@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.container{
+    width:50%;
+    height:50vh;
+    margin: 0 auto;
+    position: relative;
+}
+.container img{
+    position: absolute;
+    left:0;
+    transition: all 1s ease-in-out;
+}
+.container .top{
+    transform: scale(0,0);
+    opacity: 0;
+    
+}
+.container:hover .top{
+    transform: scale(1,1);
+    opacity:1;
+    cursor:pointer;
+
+}
+.container:hover .bottom{
+    transform:scale(0,0);
+    opacity: 0;
+}
